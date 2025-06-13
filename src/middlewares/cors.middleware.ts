@@ -14,7 +14,7 @@ export class CorsMiddleware implements NestMiddleware {
       .get<string>("ALLOWED_ORIGINS")
       ?.split(",") || [
       "http://localhost:3000",
-      "https://than-2211110134.vercel.app/",
+      "https://than-2211110134.vercel.app",
     ];
     const origin = req.headers.origin;
 
